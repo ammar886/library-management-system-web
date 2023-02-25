@@ -6,35 +6,34 @@ let signUpBtn = document.getElementById("signUp");
 let loginBtn = document.getElementById("login");
 let loginMail = document.getElementById("login-email");
 let loginPass = document.getElementById("login-pass");
+
+
+console.log(signUpBtn);
+
+if(signUpBtn){
+    signUpBtn.addEventListener("click",function(){
+        event.preventDefault();
+       
+        if(password.value===""){
+            alert("Password cannot be null!");
+        }
+        if(password.value != con_pass.value){
+            alert("Passwords do not match!");
+        }
+        if(password.value!="" && password.value === con_pass.value){
+            alert("Sign Up Succesfull! Login to continue");
+        } 
+        
+    })
+}
+
 console.log(loginBtn);
-
-if(signUpBtn){
-signUpBtn.addEventListener("click",function(){
-    event.preventDefault();
-   
-    if(password.value===""){
-        alert("Password cannot be null!");
-    }
-    if(password.value != con_pass.value){
-        alert("Passwords do not match!");
-    }
-    if(password.value!="" && password.value === con_pass.value){
-        alert("Sign Up Succesfull! Login to continue");
-    } 
-    
-})
+if(loginBtn){
+    loginBtn.addEventListener("click",function(){  
+        event.preventDefault();
+        if(loginPass.value === ""){
+            alert("Login Fail");
+        }
+    })
 }
-
-console.log("works");
-
-if(signUpBtn){
-loginBtn.addEventListener("click",function(){
-    console.log("works");
-    event.preventDefault();
-    if(loginPass.value === ""){
-        alert("Login Fail");
-    }
-})
-}
-
 
