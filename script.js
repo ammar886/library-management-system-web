@@ -8,6 +8,7 @@ let loginMail = document.getElementById("login-email");
 let loginPass = document.getElementById("login-pass");
 console.log(loginBtn);
 
+if(signUpBtn){
 signUpBtn.addEventListener("click",function(){
     event.preventDefault();
    
@@ -22,12 +23,18 @@ signUpBtn.addEventListener("click",function(){
     } 
     
 })
+}
 
+console.log("works");
+
+if(signUpBtn){
 loginBtn.addEventListener("click",function(){
+    console.log("works");
     event.preventDefault();
     if(loginPass.value === ""){
         alert("Login Fail");
     }
 })
+}
 
 
