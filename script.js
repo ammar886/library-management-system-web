@@ -8,12 +8,14 @@ let loginMail = document.getElementById("login-email");
 let loginPass = document.getElementById("login-pass");
 
 
+
 console.log(signUpBtn);
 
 if(signUpBtn){
     signUpBtn.addEventListener("click",function(){
+        localStorage.setItem("email",userMail.value);
+        localStorage.setItem("password",password.value);
         event.preventDefault();
-       
         if(password.value===""){
             alert("Password cannot be null!");
         }
@@ -27,13 +29,21 @@ if(signUpBtn){
     })
 }
 
-console.log(loginBtn);
+
 if(loginBtn){
     loginBtn.addEventListener("click",function(){  
         event.preventDefault();
+        console.log(loginBtn);
+        
         if(loginPass.value === ""){
-            alert("Login Fail");
+            alert("Fields can't be left blank!");
         }
+        else if(loginMail.value === localStorage.getItem("email") && loginPass.value === localStorage.getItem("password")){
+            alert("Login Succesfull!");
+        }
+        else{
+            alert("Wrong Credentials"); 
+       }
     })
 }
 
