@@ -1,0 +1,134 @@
+/* center the h1 element and add a border */
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  /* style the add book form */
+  .addBookForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 30px;
+  }
+  
+  .addBookForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .addBookForm input, .addBookForm select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .addBookForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addBookForm button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* style the book list */
+  #bookList {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 30px;
+  }
+  
+  #bookList h1, #bookList h2 {
+    text-align: center;
+  }
+  
+  #bookList h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  #bookList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #bookList li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  #bookList li:last-child {
+    border-bottom: none;
+  }
+  /* apply a background color to the body */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  /* center the sign up form on the page */
+  .signUpForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* style the form elements */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* style the links */
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  

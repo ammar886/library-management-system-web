@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Online Library</h1>
+    <h2 id="welcome-msg"></h2>
+   
+    <div class="addBookForm">
+        <form>
+            <label for="bookName">Book Name</label> <br>
+            <input type="text" id="book-name"> <br>
+            <label for="authorName">Author Name:</label><br>
+            <input type="text" id="authorName"><br>
+            <label>Book Type</label> <br>
+            <select id="book-type">
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-Fiction</option>
+                <option value="Children">Children</option>
+              </select><br>
+            <button id="add-book-btn">Add Book</button>
+        </form>
+    </div>
+
+    <div id="bookList">
+        <h1>Book List</h1>
+        <h2>Book name--------Author Name--------Type</h2>
+        <ul>
+           
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
